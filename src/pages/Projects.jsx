@@ -1,6 +1,12 @@
 import React from 'react'
+import { useState } from 'react'
+import viteLogo from '/vite.svg'
+import Modal from '../components/Modal'
 
 function Projects(){
+    
+    const [showModal, setShowModal] = useState(false)
+
     return (
         <section id='projects' class="bg-white dark:bg-gray-900">
         <h2 className="text-3xl font-bold">Projects</h2>
@@ -19,10 +25,10 @@ function Projects(){
 
             {/* Figura et Estilo*/}
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 md:flex-row space-x-6" >
-                <a href="#">
+                <a href="https://vite.dev" target="_blank">
                     <img 
                         class="rounded-t-lg" 
-                        src="./assets/react.svg" 
+                        src={viteLogo} 
                         alt="" />
                 </a>
                 <div class="p-5">
@@ -42,11 +48,10 @@ function Projects(){
 
             {/* Escape Room */}
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
+                <a href="https://vite.dev" target="_blank">
                     <img 
                         class="rounded-t-lg" 
-                        src="./assets/react.svg" 
-                        alt="" />
+                        src={viteLogo}/>
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -75,8 +80,8 @@ function Projects(){
 
             {/* Promee */}
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="rounded-t-lg" src="src/assets/reactjs.png" alt="promee-image" />
+                <a href="https://vite.dev" target="_blank">
+                    <img class="rounded-t-lg" src={viteLogo}  alt="promee-image" />
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -94,8 +99,6 @@ function Projects(){
             </div>
             </div>
         </section>
-
-      
         
     )
 }
