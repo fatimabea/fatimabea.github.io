@@ -7,6 +7,7 @@ import Nav from './components/Nav'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
+import Experience from './pages/Experience'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,9 +30,10 @@ function App() {
       
       <About />
       <Projects />
+      <Experience />
 
       <br></br>
-      {/* Experience*/}
+      {/* Experience
       
       <div>
         <h2 className="text-3xl font-bold">Experience</h2>
@@ -50,6 +52,7 @@ function App() {
         </ol>
 
       </div>
+      */}
       <br></br>
 
       <br></br>
