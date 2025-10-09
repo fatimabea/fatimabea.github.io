@@ -6,9 +6,9 @@ function Experience(){
     return (
         
         <div>
-        <h2 className="text-3xl font-bold">Experience</h2>
+        <h2 className="text-3xl font-bold bg-slate-900">Experience</h2>
         
-        <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+        <ol class="relative border-s border-gray-200 dark:border-gray-700 bg-slate-900">                  
             <li class="mb-10 ms-4">
                 <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2025 - April 2025</time>

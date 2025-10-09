@@ -5,8 +5,8 @@ function TechStack(){
 
     return (
         
-        <div>
-        <h2 className="text-3xl font-bold">Tech Stack</h2>
+        <div className='bg-slate-900'>
+        <h2 className="text-3xl font-bold ">Tech Stack</h2>
         {/* Tabs */}
           <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
           <li class="me-2">

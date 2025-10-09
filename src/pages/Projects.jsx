@@ -8,7 +8,7 @@ function Projects(){
     const [showModal, setShowModal] = useState(false)
 
     return (
-        <section id='projects' class="bg-white dark:bg-gray-900">
+        <section id='projects' className="bg-slate-900">
         <h2 className="text-3xl font-bold">Projects</h2>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4'>
