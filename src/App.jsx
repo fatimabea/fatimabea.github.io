@@ -17,8 +17,8 @@ function App() {
             <Nav />
             <Home />
             <About />
-            <Projects />
             <Experience />
+            <Projects />
             <TechStack />
             <Contact />
         </div>

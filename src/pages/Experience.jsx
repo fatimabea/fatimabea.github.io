@@ -2,11 +2,9 @@ import React from 'react'
 
 function Experience(){
     
-
     return (
-        
-        <div>
-        <h2 className="text-3xl font-bold bg-slate-900">Experience</h2>
+        <div className='p-4 bg-slate-900'>
+        <h2 className="text-3xl font-bold">Experience</h2>
         
         <ol class="relative border-s border-gray-200 dark:border-gray-700 bg-slate-900">                  
             <li class="mb-10 ms-4">
@@ -17,10 +15,7 @@ function Experience(){
                 <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
                 
             </li>
-          
-            
         </ol>
-
         </div>
     )
 }
