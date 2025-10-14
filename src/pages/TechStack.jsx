@@ -14,6 +14,7 @@ function TechStack(){
                 key={item.id}
                 title={item.title}
                 image={item.image}
+                variant="small"
                 />
             ))}
         </div>

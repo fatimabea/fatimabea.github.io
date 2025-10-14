@@ -33,6 +33,31 @@
   margin-top: 100px;
 }
 
+.card {
+  max-width: 48rem;
+  background-color: #141e39;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5e7eb;
+  border-radius: 0.5rem;
+  border-bottom: 0 0 2em #0005;
+  flex-direction: row;
+
+}
+
+.card--small {
+  margin: 1em;
+  text-align: center;
+  color: white;
+  background: #141e39;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2em #0005;
+  width: 20rem;
+  height: min-content;
+  flex-direction: row;
+  
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
