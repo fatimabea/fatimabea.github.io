@@ -4,7 +4,6 @@ import '../App.css';
 
 const Card = ({title, description, image, variant}) => {
     const cardClass = `card ${variant ? `card--${variant}` : ''}`;
-    //"max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-slate-900 dark:border-gray-700 md:flex-row space-x-6"
     
     return (
         <div className={cardClass}>
