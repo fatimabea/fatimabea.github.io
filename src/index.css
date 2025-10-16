@@ -26,9 +26,10 @@ a {
   color: #ffffff;
   text-decoration: inherit;
 }
-a:hover {
+/*a:hover {
   color: #00B9C2;
 }
+  */
 
 body {
   margin: 0;

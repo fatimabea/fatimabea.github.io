@@ -4,16 +4,23 @@ import '../App.css';
 const Card = ({title, description, image, href}) => {
     
     return (
-        <div className="pb-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-slate-800 dark:border-gray-700">
-            <img src={image} className="shadow-sm rounded-t-lg w-90 h-48 object-cover" alt="img" />
-            <h3 className="m-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">{title}</h3>
-            <p className="m-2 font-normal text-gray-700 dark:text-gray-400 text-center p-2">{description}</p>
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-slate-800 dark:border-gray-700 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
+            <img src={image} className="shadow-sm rounded-t-lg w-90 h-48 object-cover " alt="img" />
             
-            <a 
-                href={href}
-                target="_blank" 
-                rel="noopener noreferrer"
-                >View Project</a>
+            <div className="w-90 text-justify p-2">
+                <h3 className="m-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h3>
+                <p className="m-2 font-normal text-gray-700 dark:text-gray-400">{description}</p>
+                
+            </div>
+            <div className="flex flex-nowrap p-4"> 
+                <a 
+                    href={href}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="rounded-lg border-gray-200 p-3 text-sm bg-gradient-to-r from-teal-500 to-cyan-500 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105"
+                    >View Design</a>   
+                
+            </div>
         </div>      
     );
 };

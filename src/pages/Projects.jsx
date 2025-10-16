@@ -7,11 +7,12 @@ import CARD_ITEMS from '../data/cardData'
 
 function Projects(){
     
+    
     return (
         <section id='projects' className="bg-slate-900">
         <h2 className="text-3xl font-bold">Projects</h2>
 
-        <div className="flex flex-wrap justify-center gap-2 p-4">
+        <div className="flex flex-wrap justify-center gap-5 p-4">
             {CARD_ITEMS.map((item) => (
                 <Card
                     key={item.id}
