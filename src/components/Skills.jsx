@@ -1,13 +1,12 @@
 import React from "react";
-import SKILLS_ITEMS from "../data/skillsData";
 import '../App.css';
 
 const Skills = ({title, image}) => {
     
     return (
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <img src={image} className="shadow-sm rounded-t-lg" alt="img" />
-            <h3 className="m-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">{title}</h3>
+        <div className="p-4 place-items-center w-35 h-38 bg-white border rounded-lg border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700">
+            <img src={image} className="w-16 pb-2" alt="img" />
+            <p className="font-light text-center text-gray-500 dark:text-gray-400 text-md">{title}</p>
         </div>      
     );
 };

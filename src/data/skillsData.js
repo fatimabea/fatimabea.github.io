@@ -1,25 +1,62 @@
 
 const SKILLS_ITEMS = [
-    /* TECH STACK */
+    /* Frontend */
     {
         id: 1,
-        title: "JavaScript",
-        image: "src/assets/javascript.png",
+        title: "React",
+        image: "src/assets/reactjs.svg",
     },
     {
         id: 2,
-        title: "Java",
-        image: "src/assets/java.png",
+        title: "JavaScript (ES6+)",
+        image: "src/assets/javascript.svg",
     },
     {
         id: 3,
-        title: "React JS",
-        image: "src/assets/reactjs.png",
+        title: "HTML5",
+        image: "src/assets/html5.svg",
     },
     {
         id: 4,
-        title: "React JS",
-        image: "src/assets/reactjs.png",
+        title: "CSS3",
+        image: "src/assets/css3.svg",
+    },
+    {
+        id: 5,
+        title: "Tailwind CSS",
+        image: "src/assets/tailwindcss.svg",
+    },
+    /* Dev Tools */
+    {
+        id: 6,
+        title: "GitHub",
+        image: "src/assets/github.svg",
+    },
+    {
+        id: 7,
+        title: "Visual Studio Code",
+        image: "src/assets/visualstudiocode.svg",
+    },
+    {
+        id: 8,
+        title: "Android Studio",
+        image: "src/assets/androidstudio.svg",
+    },
+    {
+        id: 9,
+        title: "Godot",
+        image: "src/assets/godot.svg",
+    },
+    /* Design Tools */
+    {
+        id: 10,
+        title: "Figma",
+        image: "src/assets/figma.svg",
+    },
+    {
+        id: 11,
+        title: "Aseprite",
+        image: "src/assets/aseprite.svg",
     },
 ];
 export default SKILLS_ITEMS;
