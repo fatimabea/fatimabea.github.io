@@ -21,16 +21,18 @@ function App() {
             <Projects />
             <TechStack />
             <Contact />
-        </div>
 
             {/* Footer */}
-            <footer className="w-auto bg-slate-900 rounded-lg shadow-sm m-4">
+            <footer className="w-auto rounded-lg shadow-sm">
                 <div className="mx-auto p-4 md:py-8">
                     
                     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                    <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 BCD. All Rights Reserved.</span>
+                    <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 Bea D. All Rights Reserved.</span>
                 </div>
             </footer>
+        </div>
+
+            
 
         </>
   )

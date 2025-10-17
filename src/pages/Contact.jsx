@@ -1,4 +1,7 @@
 import React from 'react'
+import { Mail } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 function Contact(){
         const onSubmit = async (event) => {
@@ -24,19 +27,24 @@ function Contact(){
         }
     };
     return (
-        <section id='contact' className="bg-slate-900 p-10">
-          <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-              <h2 className="text-3xl font-bold">Contact</h2>
+        <section id='contact'>
+          <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg">
+              <h2 className="text-3xl font-bold">Contact Me</h2>
               <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got ideas in mind? Let's work together!</p>
               
-              <div className='grid md:grid-cols-2 gap-2'>
-                <div className='bg-slate-800 rounded-lg w-fit'>
-                    <h3>hh</h3>
-                    <p>vv</p>
+              <div className='grid md:grid-cols-2 gap-3'>
+                <div className='bg-slate-800 rounded-lg'>
+
+                    <div className='flex flex-col p-4 gap-4'>
+                        <Mail />
+                        <Phone />
+                        <MapPin />
+                        
                     </div>
-                <div className='bg-slate-800 rounded-lg w-fit inline-block p-6'>
+                    </div>
+                <div className='bg-slate-800 rounded-lg p-6 border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
                     <form 
-                        className="space-y-4 w-full md:w-xl mx-auto"
+                        className="space-y-4"
                         onSubmit={onSubmit}>
                         {/*name*/}
                         <div>
@@ -45,7 +53,7 @@ function Contact(){
                             type="text" 
                             id="name" 
                             name='name'
-                            className="block p-4 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            className="block w-full p-4 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                             required/>
                         </div>
                         {/*email*/}
@@ -55,8 +63,8 @@ function Contact(){
                             type="email" 
                             name='email'
                             id="email" 
-                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-4 dark:bg-slate-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"  
-                            required/>
+                            className="block w-full p-4 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            required/> 
                         </div>
                         {/*message*/}
                         <div className="sm:col-span-2">

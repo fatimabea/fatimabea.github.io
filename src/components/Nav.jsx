@@ -1,26 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Menu } from 'lucide-react';
+import { X } from 'lucide-react';
 
 function Nav(){
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+    useEffect(() => {
+        if(isOpen){
+            document.body.classList.add("no-scroll");
+        } else {
+            document.body.classList.remove("no-scroll");
+        }
+    }, [isOpen])
+
     return (
-        <section id='home' className='home'>
-        <nav className="w-auto flex space-x-4 p-4 rounded-lg text-xl font-bold bg-slate-900 text-white">
-            <a 
-                href="#home"
-                className='transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110'
-                >Home</a>
-            <a 
-                href="#about"
-                className='transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110'
-                >About</a>
-            <a 
-                href="#projects"
-                className='transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110'
-                >Projects</a>
-            <a 
-                href="#contact"
-                className='transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110'
-                >Contact</a>
-            {/*<button className="mt-2 px-2 py-2 items-center bg-blue-500 text-white rounded hover:bg-blue-600">Download CV</button>*/}
+        <section id='home'>
+        <nav className="fixed top-0 w-screen space-x-4 p-4 rounded-lg text-xl font-bold
+         text-white border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700 z-100">
+            <div className='max-w-[1200px] mx-auto p-4 flex items-center justify-between '>
+                <a href='#home' className='text-2xl font-bold z-20'>Bea</a>
+
+                {!isOpen && (
+                    <div onClick={toggleMenu} className='cursor-pointer md:hidden'>
+                        <Menu size={30}/>
+                    </div>
+                )}
+                {isOpen && (
+                    <div onClick={toggleMenu} className='cursor-pointer md:hidden z-20'>
+                        <X size={30}/>
+                    </div>
+                )}
+                {isOpen ? (
+                    <div className='bg-slate-800 rounded-lg overflow-y-hidden fixed z-10 top-24 start-0 
+                    w-screen h-80 flex justify-center items-center flex-col gap-8 duration-300 ease-in border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
+                        <a onClick={() => setIsOpen(false)} href="#home">Home</a>
+                        <a onClick={() => setIsOpen(false)} href="#about">About</a>
+                        <a onClick={() => setIsOpen(false)} href="#projects">Projects</a>
+                        <a onClick={() => setIsOpen(false)} href="#contact">Contact</a>
+                    </div> 
+                    ) : (
+                    <div className='bg-slate-800 overflow-y-hidden fixed z-10 top-24 end-[-150%]
+                    w-screen min-h-screen flex justify-center items-center flex-col gap-8 duration-300 ease-in border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
+                    </div>)}
+                
+                <div className='items-center gap-4 hidden md:flex'>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            
         </nav>
         </section>
     )

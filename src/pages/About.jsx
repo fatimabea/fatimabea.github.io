@@ -3,15 +3,28 @@ import viteLogo from '/vite.svg'
 
 function About(){
     return (
-
-        <section id='about' className="bg-slate-900">
-        
+        <section id='about' >
           <div className='p-8 lg:py-16 px-4 mx-auto max-w-screen-md'>
-            <a href="https://vite.dev" target="_blank">
-              <img src={viteLogo} className="logo" alt="Vite logo" />
-            </a>
            <h2 className="text-3xl font-bold">About Me</h2>
-           <p className="text-lg">I am a passionate UI/UX designer and frontend developer with a knack for creating beautiful and functional web experiences. With a strong foundation in design principles and coding skills, I bring ideas to life through innovative solutions.</p>
+           <div className='grid md:grid-cols-2 gap-2'>
+            <div>
+              <img src='src/assets/figma.svg'/>
+            </div>
+            <div>
+              <p className="text-lg text-left pb-2">I'm Bea Fatima Dingson, a UI/UX Designer and aspiring Full Stack Developer who thrives on collaboration and continuous learning. I love diving into new technologies and sharing knowledge to build incredible user experiences across all devices. </p>
+              <p className="text-lg text-left">Outside of design, my curiosity leads me to explore data analytics, game development, mobile development, and advanced web technologies. My ultimate goal is to turn ideas into something creative, functional, and beneficial for society.</p>
+              <div className='flex flex-nowrap p-4'>
+                <a 
+                href="src/assets/dingson-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="no-hover rounded-lg border-gray-200 p-3 text-sm bg-gradient-to-r from-teal-500 to-cyan-500 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
+                  View CV (PDF)
+                </a>
+              </div>
+            </div>
+            
+           </div>
           </div>
         
         </section>
