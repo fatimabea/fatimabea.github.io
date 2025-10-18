@@ -28,18 +28,26 @@ function Contact(){
     };
     return (
         <section id='contact'>
-          <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg">
-              <h2 className="text-3xl font-bold">Contact Me</h2>
+          <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg p-2">
+              <h2 className="text-3xl font-bold mt-15">Contact Me</h2>
               <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got ideas in mind? Let's work together!</p>
               
               <div className='grid md:grid-cols-2 gap-3'>
                 <div className='bg-slate-800 rounded-lg'>
 
-                    <div className='flex flex-col p-4 gap-4'>
-                        <Mail />
-                        <Phone />
-                        <MapPin />
-                        
+                    <div className='flex flex-col p-4 gap-4 '>
+                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
+                            <Mail size={20}/>
+                            <p>dingsonbea@gmail.com</p>
+                        </div>
+                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
+                            <Phone size={20}/>
+                            <p>+63 919 635 3508</p>
+                        </div>
+                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
+                            <MapPin size={20}/>
+                            <p>Cavite, Philippines</p>
+                        </div>
                     </div>
                     </div>
                 <div className='bg-slate-800 rounded-lg p-6 border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>

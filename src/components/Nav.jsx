@@ -17,9 +17,9 @@ function Nav(){
 
     return (
         <section id='home'>
-        <nav className="fixed top-0 w-screen space-x-4 p-4 rounded-lg text-xl font-bold
+        <nav className="fixed top-0 w-screen rounded-lg text-xl font-bold
          text-white border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700 z-100">
-            <div className='max-w-[1200px] mx-auto p-4 flex items-center justify-between '>
+            <div className='max-w-[1200px] p-4 flex items-center justify-between '>
                 <a href='#home' className='text-2xl font-bold z-20'>Bea</a>
 
                 {!isOpen && (
@@ -33,21 +33,23 @@ function Nav(){
                     </div>
                 )}
                 {isOpen ? (
-                    <div className='bg-slate-800 rounded-lg overflow-y-hidden fixed z-10 top-24 start-0 
-                    w-screen h-80 flex justify-center items-center flex-col gap-8 duration-300 ease-in border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
+                    <div className='bg-slate-800 rounded-lg overflow-y-hidden fixed z-10 top-18 start-0 
+                    w-screen h-80 flex justify-center items-center flex-col gap-6 duration-300 ease-in border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
                         <a onClick={() => setIsOpen(false)} href="#home">Home</a>
                         <a onClick={() => setIsOpen(false)} href="#about">About</a>
+                        <a onClick={() => setIsOpen(false)} href="#skills">Skills</a>
                         <a onClick={() => setIsOpen(false)} href="#projects">Projects</a>
                         <a onClick={() => setIsOpen(false)} href="#contact">Contact</a>
                     </div> 
                     ) : (
-                    <div className='bg-slate-800 overflow-y-hidden fixed z-10 top-24 end-[-150%]
-                    w-screen min-h-screen flex justify-center items-center flex-col gap-8 duration-300 ease-in border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
+                    <div className='bg-slate-800 overflow-y-hidden fixed z-10 top-18 end-[-150%]
+                    w-screen min-h-screen flex justify-center items-center flex-col gap-6 duration-300 ease-in border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
                     </div>)}
                 
                 <div className='items-center gap-4 hidden md:flex'>
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>

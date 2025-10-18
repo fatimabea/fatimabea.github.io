@@ -17,9 +17,9 @@ function App() {
             <Nav />
             <Home />
             <About />
+            <TechStack />
             <Experience />
             <Projects />
-            <TechStack />
             <Contact />
 
             {/* Footer */}

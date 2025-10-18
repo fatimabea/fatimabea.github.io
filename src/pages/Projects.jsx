@@ -9,8 +9,8 @@ function Projects(){
     
     
     return (
-        <section id='projects'>
-        <h2 className="text-3xl font-bold">Projects</h2>
+        <section id='projects' className='p-2'>
+        <h2 className="text-3xl font-bold mt-25 pb-5">Projects</h2>
 
         <div className="flex flex-wrap justify-center gap-5 p-4">
             {CARD_ITEMS.map((item) => (

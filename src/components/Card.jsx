@@ -1,5 +1,6 @@
 import React from "react";
 import '../App.css';
+import CARD_ITEMS from "../data/cardData";
 
 const Card = ({title, description, image, href}) => {
     
@@ -12,6 +13,7 @@ const Card = ({title, description, image, href}) => {
                 <p className="m-2 font-normal text-gray-700 dark:text-gray-400">{description}</p>
                 
             </div>
+            
             <div className="flex flex-nowrap p-4"> 
                 <a 
                     href={href}

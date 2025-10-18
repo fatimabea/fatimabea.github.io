@@ -5,8 +5,9 @@ import Skills from '../components/Skills';
 function TechStack(){
      
     return (
-        <div>
-            <h2 className="text-3xl font-bold ">Technical Skills</h2>
+        <section id='skills'>
+        <div className='p-2'>
+            <h2 className="text-3xl font-bold mt-25 pb-5">Technical Skills</h2>
     
             <div className='flex flex-wrap justify-center gap-2 p-4'>
                 {SKILLS_ITEMS.map(item => (<Skills
@@ -17,6 +18,7 @@ function TechStack(){
                 ))}
             </div>
         </div>
+        </section>
     )
 }
 export default TechStack

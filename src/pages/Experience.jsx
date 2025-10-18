@@ -4,7 +4,7 @@ function Experience(){
     
     return (
         <div className='p-4'>
-        <h2 className="pb-5 text-3xl font-bold">Experience</h2>
+        <h2 className="pb-5 text-3xl font-bold mt-20">Experience</h2>
         
         <ol className="pt-5 max-w-md mx-auto relative border-s border-gray-200 dark:border-gray-700 bg-slate-900">                  
             <li className="mb-10 ms-6 text-left">
