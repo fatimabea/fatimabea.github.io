@@ -19,8 +19,8 @@ function Nav(){
         <section id='home'>
         <nav className="fixed top-0 w-screen text-lg font-bold
          text-white border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700 z-100">
-            <div className='max-w-[1200px] p-3 flex items-center justify-between '>
-                <a href='#home' className='text-2xl font-bold z-20'>Bea</a>
+            <div className='max-w-[1200px] p-3 flex items-center justify-between mx-auto'>
+                <a href='#home' className='text-2xl font-bold z-20'>Bea.</a>
 
                 {!isOpen && (
                     <div onClick={toggleMenu} className='cursor-pointer md:hidden hover:bg-slate-700'>
@@ -47,7 +47,7 @@ function Nav(){
                     </div>)}
                 
                 <div className='items-center gap-4 hidden md:flex'>
-                    <a href="#home" className='hover:bg-slate-700 p-2 rounded-md'>Home</a>
+                    <a href="#home" className='active hover:bg-slate-700 p-2 rounded-md'>Home</a>
                     <a href="#about" className='hover:bg-slate-700 p-2 rounded-md'>About</a>
                     <a href="#skills" className='hover:bg-slate-700 p-2 rounded-md'>Skills</a>
                     <a href="#projects" className='hover:bg-slate-700 p-2 rounded-md'>Projects</a>

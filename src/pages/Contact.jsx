@@ -32,7 +32,7 @@ function Contact(){
               <h2 className="text-3xl font-bold mt-20">Contact Me</h2>
               <p className="lg:mb-12 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got ideas in mind? Let's work together!</p>
               
-              <div className='grid md:grid-cols-2 gap-3'>
+              <div className='grid md:grid-cols-2 gap-3 mt-4'>
                 <div className='bg-slate-800 rounded-lg'>
 
                     <div className='flex flex-col p-4 gap-4 '>

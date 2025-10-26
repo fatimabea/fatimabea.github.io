@@ -15,8 +15,9 @@ function About(){
                 />
             </div>
             <div className='p-4'>
-              <p className="text-lg text-left pb-4 text-gray-500 dark:text-gray-400">I'm Bea Fatima Dingson, a UI/UX Designer and aspiring Full Stack Developer who thrives on collaboration and continuous learning. I love diving into new technologies and sharing knowledge to build incredible user experiences across all devices. </p>
-              <p className="text-lg text-left pb-4 text-gray-500 dark:text-gray-400">Outside of design, my curiosity leads me to explore data analytics, game development, mobile development, and advanced web technologies. My ultimate goal is to turn ideas into something creative, functional, and beneficial for society.</p>
+              <p className="text-lg text-left pb-4 text-gray-500 dark:text-gray-200">I'm Bea Fatima Dingson, a UI/UX Designer and aspiring Full Stack Developer who thrives on collaboration and continuous learning. I love diving into new technologies to build incredible user experiences across all devices. </p>
+              <p className="text-lg text-left pb-4 text-gray-500 dark:text-gray-200">My foundation is built on a unique blend of creative design and technical expertise. I specialize in translating user needs and data into intuitive, accessible interfaces using Figma.</p>
+              <p className="text-lg text-left pb-4 text-gray-500 dark:text-gray-200">Beyond design, my curiosity drives me to explore data analytics, game development, and advanced web technologies. My ultimate goal is to turn ideas into something creative, functional, and beneficial for society.</p>
               <div className='flex flex-nowrap'>
                 <a 
                 href="src/assets/dingson-cv.pdf"

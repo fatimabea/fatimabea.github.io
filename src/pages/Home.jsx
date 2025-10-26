@@ -8,7 +8,7 @@ function Home(){
       <div className='h-screen flex flex-col justify-center items-center mt-6 ml-2 mr-2 p-4 space-y-2 text-center'> 
         <h3 className='text-2xl font-bold'>Hi! I'm Bea Fatima.</h3>
          <p className='leading-18 text-5xl font-bold bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent'>UI/UX Designer</p>
-          <p className='text-lg flex space-x-4 max-w-2xl'>I blend a keen eye for consistent UI with a focus on robust functionality. I craft digital products that are beautiful and simply work.</p>
+          <p className='text-lg text-gray-200 flex space-x-4 max-w-2xl'>I blend a keen eye for consistent UI with a focus on robust functionality. I craft digital products that are beautiful and simply work.</p>
         <div className='flex flex-row gap-2 pt-2'>
         <div className='mt-2'>
                 <a 
