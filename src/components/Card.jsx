@@ -5,7 +5,7 @@ import CARD_ITEMS from "../data/cardData";
 const Card = ({title, description, image, href}) => {
     
     return (
-        <div className="max-w-xs bg-white borderborder-gray-200 rounded-lg shadow-sm dark:bg-slate-800 dark:border-gray-700 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
+        <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-slate-800 dark:border-gray-700 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
             <img src={image} className="shadow-sm rounded-t-lg w-90 h-48 object-cover " alt="img" />
             
             <div className="text-left p-2">

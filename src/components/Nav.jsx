@@ -17,29 +17,29 @@ function Nav(){
 
     return (
         <section id='home'>
-        <nav className="fixed top-0 w-screen rounded-lg text-xl font-bold
+        <nav className="fixed top-0 w-screen text-lg font-bold
          text-white border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700 z-100">
-            <div className='max-w-[1200px] p-4 flex items-center justify-between '>
+            <div className='max-w-[1200px] p-3 flex items-center justify-between '>
                 <a href='#home' className='text-2xl font-bold z-20'>Bea</a>
 
                 {!isOpen && (
-                    <div onClick={toggleMenu} className='cursor-pointer md:hidden'>
+                    <div onClick={toggleMenu} className='cursor-pointer md:hidden hover:bg-slate-700'>
                         <Menu size={30}/>
                     </div>
                 )}
                 {isOpen && (
-                    <div onClick={toggleMenu} className='cursor-pointer md:hidden z-20'>
+                    <div onClick={toggleMenu} className='cursor-pointer md:hidden z-20 hover:bg-slate-700'>
                         <X size={30}/>
                     </div>
                 )}
                 {isOpen ? (
                     <div className='bg-slate-800 rounded-lg overflow-y-hidden fixed z-10 top-18 start-0 
-                    w-screen h-80 flex justify-center items-center flex-col gap-6 duration-300 ease-in border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
-                        <a onClick={() => setIsOpen(false)} href="#home">Home</a>
-                        <a onClick={() => setIsOpen(false)} href="#about">About</a>
-                        <a onClick={() => setIsOpen(false)} href="#skills">Skills</a>
-                        <a onClick={() => setIsOpen(false)} href="#projects">Projects</a>
-                        <a onClick={() => setIsOpen(false)} href="#contact">Contact</a>
+                    w-screen p-4 flex justify-center items-center flex-col gap-2 duration-300 ease-in border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700  transition-opacity'>
+                        <a onClick={() => setIsOpen(false)} href="#home" className='hover:bg-slate-700 p-1 w-full rounded-md'>Home</a>
+                        <a onClick={() => setIsOpen(false)} href="#about" className='hover:bg-slate-700 p-1 w-full rounded-md'>About</a>
+                        <a onClick={() => setIsOpen(false)} href="#skills" className='hover:bg-slate-700 p-1 w-full rounded-md'>Skills</a>
+                        <a onClick={() => setIsOpen(false)} href="#projects" className='hover:bg-slate-700 p-1 w-full rounded-md'>Projects</a>
+                        <a onClick={() => setIsOpen(false)} href="#contact" className='hover:bg-slate-700 p-1 w-full rounded-md'>Contact</a>
                     </div> 
                     ) : (
                     <div className='bg-slate-800 overflow-y-hidden fixed z-10 top-18 end-[-150%]
@@ -47,14 +47,13 @@ function Nav(){
                     </div>)}
                 
                 <div className='items-center gap-4 hidden md:flex'>
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#home" className='hover:bg-slate-700 p-2 rounded-md'>Home</a>
+                    <a href="#about" className='hover:bg-slate-700 p-2 rounded-md'>About</a>
+                    <a href="#skills" className='hover:bg-slate-700 p-2 rounded-md'>Skills</a>
+                    <a href="#projects" className='hover:bg-slate-700 p-2 rounded-md'>Projects</a>
+                    <a href="#contact" className='hover:bg-slate-700 p-2 rounded-md'>Contact</a>
                 </div>
             </div>
-            
         </nav>
         </section>
     )

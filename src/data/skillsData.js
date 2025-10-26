@@ -26,6 +26,16 @@ const SKILLS_ITEMS = [
         title: "Tailwind CSS",
         image: "src/assets/tailwindcss.svg",
     },
+    {
+        id: 12,
+        title: "Java",
+        image: "src/assets/java.svg",
+    },
+    {
+        id: 13,
+        title: "C#",
+        image: "src/assets/csharp.svg",
+    },
     /* Dev Tools */
     {
         id: 6,
