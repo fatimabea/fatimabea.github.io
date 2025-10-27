@@ -7,9 +7,5 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  base: "/fatimabea.github.io/",
-  build: {
-    outDir: 'docs',
-    emptyOutDir: true,
-  }
+  base: "/",
 })
