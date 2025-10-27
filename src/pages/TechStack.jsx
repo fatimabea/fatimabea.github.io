@@ -3,7 +3,6 @@ import SKILLS_ITEMS from '../data/skillsData'
 import Skills from '../components/Skills';
 
 function TechStack(){
-     
     return (
         <section id='skills'>
         <div className='p-10'>

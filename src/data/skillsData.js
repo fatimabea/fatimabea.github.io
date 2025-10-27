@@ -1,6 +1,6 @@
 
 const SKILLS_ITEMS = [
-    /* Frontend */
+    /* Frontend/Backend */
     {
         id: 1,
         title: "React",

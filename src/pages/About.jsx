@@ -1,5 +1,4 @@
 import React from 'react'
-import viteLogo from '/vite.svg'
 
 function About(){
     return (
@@ -28,14 +27,9 @@ function About(){
                 </a>
               </div>
             </div>
-            
            </div>
           </div>
-        
         </section>
-
-      
-        
     )
 }
 export default About

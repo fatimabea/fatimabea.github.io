@@ -1,13 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import Card from '../components/Card'
 import CARD_ITEMS from '../data/cardData'
 
-
 function Projects(){
-    
-    
     return (
         <section id='projects' className='p-10'>
         <h2 className="text-3xl font-bold mt-20 pb-5">Projects</h2>

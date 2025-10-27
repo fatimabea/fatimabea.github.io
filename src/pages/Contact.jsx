@@ -59,8 +59,6 @@ function Contact(){
                                     <img src='src/assets/linked.svg' alt='linkedin' className='w-8 h-8 hover:bg-slate-600 bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
                                 </a>
                             </div>
-                            
-
                         </div>
                     </div>
                     </div>
