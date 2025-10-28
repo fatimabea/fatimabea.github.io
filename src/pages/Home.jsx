@@ -1,7 +1,7 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react';
-import { githubLink } from '../assets/mdi.svg';
-import { linkedinLink } from '../assets/linked.svg';
+import githubLink from '../assets/mdi.svg';
+import linkedinLink from '../assets/linked.svg';
 
 function Home(){
     return (
