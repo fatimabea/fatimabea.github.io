@@ -2,6 +2,7 @@ import React from "react";
 import '../App.css';
 import CARD_ITEMS from "../data/cardData";
 
+
 const Card = ({title, description, image, href}) => {
     return (
         <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-slate-800 dark:border-gray-700 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">

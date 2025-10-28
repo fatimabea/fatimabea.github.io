@@ -1,5 +1,7 @@
 import React from 'react'
 import { ArrowRight } from 'lucide-react';
+import { githubLink } from '../assets/mdi.svg';
+import { linkedinLink } from '../assets/linked.svg';
 
 function Home(){
     return (
@@ -27,12 +29,12 @@ function Home(){
         <div className='flex flex-row gap-3 p-2'>
           <div>
               <a href='https://github.com/beafatima' target="_blank" rel="noopener noreferrer">
-                <img src='src/assets/mdi.svg' alt='facebook' className='w-8 h-8 hover:bg-slate-600 bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
+                <img src={githubLink} alt='github' className='w-8 h-8 hover:bg-slate-600 bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
               </a>
           </div>
           <div>
               <a href='https://www.linkedin.com/in/bea-fatima-dingson-7a644b331' target="_blank" rel="noopener noreferrer">
-                <img src='src/assets/linked.svg' alt='linkedin' className='w-8 h-8 hover:bg-slate-600 bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
+                <img src={linkedinLink} alt='linkedin' className='w-8 h-8 hover:bg-slate-600 bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
               </a>
           </div>
         </div>  
