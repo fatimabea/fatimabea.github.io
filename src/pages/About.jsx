@@ -1,5 +1,5 @@
 import React from 'react'
-import picture from '../assets/myphoto-2.png';
+import myPhoto from '../assets/myphoto-2.png';
 
 
 function About(){
@@ -10,7 +10,7 @@ function About(){
            <div className='grid md:grid-cols-2 gap-10'>
             <div className='flex justify-center items-center'>
               <img 
-                src={picture}
+                src={myPhoto}
                 className='rounded-full w-72 h-72 object-cover'
                 alt='image'
                 />
