@@ -13,7 +13,7 @@ function App() {
 
   return (
         <>
-        <div>
+        <div className='bg-gray-100 dark:bg-slate-900 text-slate-800 dark:text-gray-200 transition-colors duration-300'>
             <Nav />
             <Home />
             <About />
@@ -24,8 +24,8 @@ function App() {
 
             <footer className="w-auto rounded-lg shadow-sm">
                 <div className="mx-auto p-4 md:py-8">
-                    <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                    <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 Bea D. All Rights Reserved.</span>
+                    <hr className="my-6 border-gray-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                    <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-700">© 2025 Bea D. All Rights Reserved.</span>
                 </div>
             </footer>
         </div>
