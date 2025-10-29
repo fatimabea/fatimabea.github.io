@@ -5,13 +5,13 @@ import myPhoto from '../assets/myphoto-2.png';
 function About(){
     return (
         <section id='about'>
-          <div className='lg:py-16 px-4 mx-auto max-w-5xl p-2'>
-           <h2 className="text-3xl font-bold pb-10 mt-20">About Me</h2>
-           <div className='grid md:grid-cols-2 gap-10'>
+          <div className='mx-auto max-w-5xl p-4 pt-10'>
+           <h2 className="text-3xl font-bold mt-20">About Me</h2>
+           <div className='grid md:grid-cols-2 gap-4 pt-10'>
             <div className='flex justify-center items-center'>
               <img 
                 src={myPhoto}
-                className='rounded-full w-72 h-72 object-cover'
+                className='rounded-full w-72 h-72 object-cover p-4'
                 alt='image'
                 />
             </div>
@@ -24,7 +24,7 @@ function About(){
                 href="src/assets/dingson-cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="no-hover rounded-lg border-gray-200 p-3 text-sm bg-gradient-to-r from-teal-500 to-cyan-500 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
+                className="no-hover rounded-lg border-gray-200 p-3 text-sm bg-linear-to-r from-teal-500 to-cyan-500 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
                   View CV (PDF)
                 </a>
               </div>

@@ -27,26 +27,27 @@ function Contact(){
         if (res.success) {
         console.log("Success", res);
         }
+
     };
     return (
         <section id='contact'>
-          <div className="py-8 lg:py-16 px-4 mx-auto max-w-5xl p-10">
+          <div className="mx-auto max-w-5xl p-4 pt-10">
               <h2 className="text-3xl font-bold mt-20">Contact Me</h2>
-              <p className="lg:mb-12 font-light text-center text-gray-600 dark:text-gray-400 sm:text-xl">Got ideas in mind? Let's work together!</p>
+              <p className="font-light text-center text-gray-600 dark:text-gray-400 sm:text-xl">Got ideas in mind? Let's work together!</p>
               
-              <div className='grid md:grid-cols-2 gap-3 mt-4'>
+              <div className='grid md:grid-cols-2 gap-3 mt-10'>
                 <div className='bg-gray-100 rounded-lg border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
 
                     <div className='flex flex-col p-4 gap-4 '>
-                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-slate-700'>
+                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-100 shadow-sm dark:bg-slate-800 dark:border-gray-700 '>
                             <Mail size={20}/>
                             <p>dingsonbea@gmail.com</p>
                         </div>
-                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-slate-700'>
+                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-100 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
                             <Phone size={20}/>
                             <p>+63 919 635 3508</p>
                         </div>
-                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-slate-700'>
+                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-100 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
                             <MapPin size={20}/>
                             <p>Cavite, Philippines</p>
                         </div>
@@ -75,7 +76,7 @@ function Contact(){
                             type="text" 
                             id="name" 
                             name='name'
-                            className="block w-full p-4 text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-200 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            className="block w-full p-4 text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-100 dark:border-gray-600 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800  dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                             required/>
                         </div>
                         {/*email*/}
@@ -85,7 +86,7 @@ function Contact(){
                             type="email" 
                             name='email'
                             id="email" 
-                            className="block w-full p-4 text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-200 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            className="block w-full p-4 text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-100 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                             required/> 
                         </div>
                         {/*message*/}
@@ -95,7 +96,7 @@ function Contact(){
                             id="message" 
                             name='message'
                             rows="6" 
-                            className="block p-4 w-full text-sm text-gray-900 bg-gray-100 rounded-lg shadow-sm border border-gray-200 focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            className="block p-4 w-full text-sm text-gray-900 bg-gray-100 rounded-lg shadow-sm border border-gray-100 focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                             </textarea>
                         </div>
                         {/*button*/}

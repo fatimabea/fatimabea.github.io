@@ -5,7 +5,7 @@ import CARD_ITEMS from '../data/cardData'
 
 function Projects(){
     return (
-        <section id='projects' className='p-10'>
+        <section id='projects' className='p-2 pt-10'>
         <h2 className="text-3xl font-bold mt-20 pb-5">Projects</h2>
 
         <div className="flex flex-wrap justify-center gap-5 p-4">

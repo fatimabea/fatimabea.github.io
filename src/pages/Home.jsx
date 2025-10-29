@@ -22,10 +22,10 @@ function Home(){
   const linkedinTheme = isDarkMode ? linkedinLink : linkedinLinkDark;
 
     return (
-      <div className='h-screen flex flex-col justify-center items-center mt-6 ml-2 mr-2 p-4 space-y-2 text-center'> 
+      <div className='h-screen flex flex-col justify-center items-center p-2 text-center'> 
         <h3 className='text-2xl font-bold text-slate-700 dark:text-gray-200'>Hi! I'm Bea Fatima.</h3>
          <p className='leading-18 text-5xl font-bold bg-linear-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent'>UI/UX Designer</p>
-          <p className='text-lg text-slate-700 dark:text-gray-200 flex space-x-4 max-w-2xl'>I blend a keen eye for consistent UI with a focus on robust functionality. I craft digital products that are beautiful and simply work.</p>
+          <p className='text-lg text-slate-700 dark:text-gray-200 flex space-x-4 max-w-2xl p-2'>I blend a keen eye for consistent UI with a focus on robust functionality. I craft digital products that are beautiful and simply work.</p>
         <div className='flex flex-row gap-2 pt-2'>
         <div className='mt-2'>
                 <a 
@@ -43,7 +43,7 @@ function Home(){
                 </a>
               </div>   
         </div> 
-        <div className='flex flex-row gap-3 p-2'>
+        <div className='flex flex-row gap-3 pt-6'>
           <div>
               <a href='https://github.com/beafatima' target="_blank" rel="noopener noreferrer">
                 <img src={githubTheme} alt='github' className='w-8 h-8 border border-gray-300 dark:border-slate-600 hover:bg-slate-200 dark:hover:bg-slate-600 bg-gray-200 dark:bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
@@ -57,9 +57,9 @@ function Home(){
         </div>
         <div 
           onClick={toggleTheme}
-          className='absolute left-0 bottom-8 ms-8 pt-10 rounded-lg'
+          className='absolute left-0 bottom-6 ms-6 pt-10 rounded-lg'
           aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}>
-            {theme === 'light' ? <Moon size={22} className='text-slate-800 w-6 h-8 border border-gray-300 dark:border-slate-600 hover:bg-gray-300 bg-gray-200 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/> : <Sun size={22} className='w-6 h-8 hover:bg-slate-600 bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>}
+            {theme === 'light' ? <Moon size={22} className='text-slate-800 w-7 h-9 border border-gray-300 dark:border-slate-600 hover:bg-gray-300 bg-gray-200 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/> : <Sun size={22} className='w-7 h-9 hover:bg-slate-600 border border-gray-300 dark:border-slate-600 bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>}
             
         </div>
       </div>
