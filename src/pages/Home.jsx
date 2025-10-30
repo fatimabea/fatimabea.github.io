@@ -37,7 +37,7 @@ function Home(){
       <div className='h-screen flex flex-col justify-center items-center p-2 text-center'>
         {/* Intro Text */} 
         <h3 className='pb-2 text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-bold text-slate-700 dark:text-gray-200'>Hi! I'm Bea Fatima.</h3>
-        <p className='text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold bg-linear-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent'>UI/UX Designer</p>
+        <p className='leading-tight text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold bg-linear-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent'>UI/UX Designer</p>
         <p className='text-lg md:text-lg lg:text-xl xl:text-xl text-slate-700 dark:text-gray-300 flex space-x-4 max-w-3xl p-2'>I am committed to crafting clean, consistently intuitive interfaces where every element serves a purpose. My passion is translating complex needs into accessible, high-functioning designs that deliver an effortless user experience. </p>
           
           <div className='flex flex-row gap-2 pt-2'>
