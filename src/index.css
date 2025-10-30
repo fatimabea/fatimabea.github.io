@@ -1,6 +1,25 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+@import "tailwindcss/preflight"
 
+@tailwind components;   
+@tailwind utilities;
+
+@layer components {
+  a {
+    @apply font-medium font-sans text-gray-100;
+    
+  }
+  .dark a {
+    @apply text-gray-100;
+  }
+  button {
+    @apply text-gray-100 bg-linear-to-r from-teal-500 to-cyan-500 cursor-pointer rounded-lg font-medium font-sans  decoration-inherit;
+  }
+  .dark button {
+    @apply text-gray-100 cursor-pointer rounded-lg font-medium font-sans decoration-inherit;
+  }
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -16,18 +35,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  color: #ffffff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #00B9C2;
-}
-.no-hover:hover {
-  color: white;
-}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -43,24 +51,9 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-image: linear-gradient(to right, #00B9C2, #00B8DB);
-  font-weight: 500;
-  cursor: pointer;
-  transition: border-color 0.25s;
   
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

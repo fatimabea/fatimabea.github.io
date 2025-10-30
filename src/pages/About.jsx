@@ -1,7 +1,6 @@
 import React from 'react'
 import myPhoto from '../assets/myphoto-2.png';
 
-
 function About(){
     return (
         <section id='about'>
@@ -24,8 +23,8 @@ function About(){
                 href="src/assets/dingson-cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="no-hover rounded-lg border-gray-200 p-3 text-sm bg-linear-to-r from-teal-500 to-cyan-500 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
-                  View CV (PDF)
+                className="no-hover rounded-lg border-gray-200 p-3 text-md bg-linear-to-r from-teal-500 to-cyan-500 w-36 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
+                  Download CV
                 </a>
               </div>
             </div>

@@ -2,8 +2,7 @@ import React from 'react'
 import { Mail } from 'lucide-react';
 import { Phone } from 'lucide-react';
 import { MapPin } from 'lucide-react';
-import githubLink from '../assets/mdi.svg';
-import linkedinLink from '../assets/linked.svg';
+import { IconBrandGithub, IconBrandLinkedin, IconSend } from '@tabler/icons-react';
 
 function Contact(){
         const onSubmit = async (event) => {
@@ -27,7 +26,6 @@ function Contact(){
         if (res.success) {
         console.log("Success", res);
         }
-
     };
     return (
         <section id='contact'>
@@ -39,27 +37,27 @@ function Contact(){
                 <div className='bg-gray-100 rounded-lg border border-gray-200 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
 
                     <div className='flex flex-col p-4 gap-4 '>
-                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-100 shadow-sm dark:bg-slate-800 dark:border-gray-700 '>
+                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-200 dark:bg-slate-800 dark:border-gray-700 '>
                             <Mail size={20}/>
                             <p>dingsonbea@gmail.com</p>
                         </div>
-                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-100 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
+                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-200 dark:bg-slate-800 dark:border-gray-700'>
                             <Phone size={20}/>
                             <p>+63 919 635 3508</p>
                         </div>
-                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-100 shadow-sm dark:bg-slate-800 dark:border-gray-700'>
+                        <div className='flex flex-row gap-3 text-md items-center p-4 border rounded-lg border-gray-200 dark:bg-slate-800 dark:border-gray-700'>
                             <MapPin size={20}/>
                             <p>Cavite, Philippines</p>
                         </div>
                         <div className='flex flex-row gap-3 p-2'>
                             <div>
                                 <a href='https://github.com/beafatima' target="_blank" rel="noopener noreferrer">
-                                    <img src={githubLink} alt='github' className='w-8 h-8 border border-gray-100 dark:border-slate-600 hover:bg-slate-200 dark:hover:bg-slate-600 bg-gray-200 dark:bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
+                                    <IconBrandGithub size={32} className='text-slate-800 dark:text-gray-100 border border-gray-300 dark:border-slate-600 hover:bg-slate-200 dark:hover:bg-slate-600 bg-gray-100 dark:bg-slate-700 shadow-sm rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
                                 </a>
                             </div>
                             <div>
-                                <a href='www.linkedin.com/in/bea-fatima-dingson-7a644b331' target="_blank" rel="noopener noreferrer">
-                                    <img src={linkedinLink} alt='linkedin' className='w-8 h-8 border border-gray-100 dark:border-slate-600 hover:bg-slate-200 dark:hover:bg-slate-600 bg-gray-200 dark:bg-slate-700 rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
+                                <a href='https://www.linkedin.com/in/bea-fatima-dingson-7a644b331' target="_blank" rel="noopener noreferrer">
+                                    <IconBrandLinkedin size={32} className='text-slate-800 dark:text-gray-100 border border-gray-300 dark:border-slate-600 hover:bg-slate-200 dark:hover:bg-slate-600 bg-gray-100 dark:bg-slate-700 shadow-sm rounded-2xl p-1 hover:scale-110 transition duration-200 ease-in-out'/>
                                 </a>
                             </div>
                         </div>
@@ -76,7 +74,7 @@ function Contact(){
                             type="text" 
                             id="name" 
                             name='name'
-                            className="block w-full p-4 text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-100 dark:border-gray-600 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800  dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            className="block w-full p-4 text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-100 dark:border-gray-600 drop-shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800  dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                             required/>
                         </div>
                         {/*email*/}
@@ -86,7 +84,7 @@ function Contact(){
                             type="email" 
                             name='email'
                             id="email" 
-                            className="block w-full p-4 text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-100 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            className="block w-full p-4 text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-100 drop-shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                             required/> 
                         </div>
                         {/*message*/}
@@ -96,14 +94,15 @@ function Contact(){
                             id="message" 
                             name='message'
                             rows="6" 
-                            className="block p-4 w-full text-sm text-gray-900 bg-gray-100 rounded-lg shadow-sm border border-gray-100 focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            className="block p-4 w-full text-sm text-gray-900 bg-gray-100 rounded-lg drop-shadow-sm border border-gray-100 focus:ring-primary-500 focus:border-primary-500 dark:bg-slate-800 dark:border-gray-600 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                             </textarea>
                         </div>
                         {/*button*/}
                         <button 
                             type="submit" 
-                            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-slate-800 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
+                            className="py-3 px-5 text-sm font-medium text-center rounded-lg bg-primary-700 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-slate-800 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
                             Send Message
+                            <IconSend size={18} className='inline-block ms-2 mb-1'/>
                         </button>
                     </form>
               </div>

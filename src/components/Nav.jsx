@@ -20,7 +20,7 @@ function Nav(){
         <nav className="fixed top-0 w-screen text-lg font-bold
          text-slate-800 dark:text-white border border-gray-100 shadow-sm bg-gray-100 dark:bg-slate-900 dark:border-gray-800 z-100">
             <div className='max-w-[1200px] p-3 flex items-center justify-between mx-auto'>
-                <a href='#home' className='text-slate-800 dark:text-white text-2xl font-bold z-20'>Bea.</a>
+                <a href='#home' className='text-slate-800 dark:text-gray-100 text-2xl font-bold z-20'>Bea.</a>
 
                 {!isOpen && (
                     <div onClick={toggleMenu} className='cursor-pointer md:hidden hover:bg-gray-200 dark:hover:bg-slate-700'>
@@ -33,13 +33,13 @@ function Nav(){
                     </div>
                 )}
                 {isOpen ? (
-                    <div className='bg-gray-100 dark:bg-slate-900 rounded-lg overflow-y-hidden fixed z-10 top-18 start-0 
-                    w-screen p-4 flex justify-center items-center flex-col gap-2 duration-300 ease-in border border-gray-200 shadow-sm dark:border-gray-800  transition-opacity'>
-                        <a onClick={() => setIsOpen(false)} href="#home" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md'>Home</a>
-                        <a onClick={() => setIsOpen(false)} href="#about" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md'>About</a>
-                        <a onClick={() => setIsOpen(false)} href="#skills" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md'>Skills</a>
-                        <a onClick={() => setIsOpen(false)} href="#projects" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md'>Projects</a>
-                        <a onClick={() => setIsOpen(false)} href="#contact" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md'>Contact</a>
+                    <div className='bg-gray-100 dark:bg-slate-900 overflow-y-hidden fixed z-10 top-16 start-0 
+                    w-screen p-4 flex flex-col gap-2 duration-300 ease-in border border-gray-200 shadow-sm dark:border-gray-800  transition-opacity'>
+                        <a onClick={() => setIsOpen(false)} href="#home" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md text-slate-800 dark:text-gray-100'>Home</a>
+                        <a onClick={() => setIsOpen(false)} href="#about" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md text-slate-800 dark:text-gray-100'>About</a>
+                        <a onClick={() => setIsOpen(false)} href="#skills" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md text-slate-800 dark:text-gray-100'>Skills</a>
+                        <a onClick={() => setIsOpen(false)} href="#projects" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md text-slate-800 dark:text-gray-100'>Projects</a>
+                        <a onClick={() => setIsOpen(false)} href="#contact" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-1 w-full rounded-md text-slate-800 dark:text-gray-100'>Contact</a>
                         
                     </div> 
                     ) : (
@@ -48,11 +48,11 @@ function Nav(){
                     </div>)}
                 
                 <div className='items-center gap-4 hidden md:flex'>
-                    <a href="#home" className='active hover:bg-slate-700 p-2 rounded-md'>Home</a>
-                    <a href="#about" className='hover:bg-slate-700 p-2 rounded-md'>About</a>
-                    <a href="#skills" className='hover:bg-slate-700 p-2 rounded-md'>Skills</a>
-                    <a href="#projects" className='hover:bg-slate-700 p-2 rounded-md'>Projects</a>
-                    <a href="#contact" className='hover:bg-slate-700 p-2 rounded-md'>Contact</a>
+                    <a href="#home" className='active hover:bg-gray-200 dark:hover:bg-slate-800 p-2 rounded-md text-slate-800 dark:text-gray-100'>Home</a>
+                    <a href="#about" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-2 rounded-md text-slate-800 dark:text-gray-100'>About</a>
+                    <a href="#skills" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-2 rounded-md text-slate-800 dark:text-gray-100'>Skills</a>
+                    <a href="#projects" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-2 rounded-md text-slate-800 dark:text-gray-100'>Projects</a>
+                    <a href="#contact" className='hover:bg-gray-200 dark:hover:bg-slate-800 p-2 rounded-md text-slate-800 dark:text-gray-100'>Contact</a>
                 </div>
             </div>
         </nav>

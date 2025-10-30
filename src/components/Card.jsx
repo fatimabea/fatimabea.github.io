@@ -9,8 +9,8 @@ const Card = ({title, description, image, href}) => {
             <img src={image} className="shadow-sm rounded-t-lg w-90 h-48 object-cover " alt="img" />
             
             <div className="text-left p-2">
-                <h3 className="m-2 text-2xl font-bold tracking-tight text-slate-800 dark:text-white">{title}</h3>
-                <p className="m-2 font-normal text-gray-700 dark:text-gray-400">{description}</p>
+                <h3 className="m-2 text-2xl font-bold tracking-tight text-slate-800 dark:text-gray-100">{title}</h3>
+                <p className="m-2 font-normal text-gray-700 dark:text-gray-300">{description}</p>
             </div>
             
             <div className="flex flex-nowrap p-4"> 

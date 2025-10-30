@@ -24,8 +24,8 @@ function App() {
 
             <footer className="w-auto rounded-lg shadow-sm">
                 <div className="mx-auto p-4 md:py-8">
-                    <hr className="my-6 border-gray-500 sm:mx-auto dark:border-gray-500 lg:my-8" />
-                    <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 Bea D. All Rights Reserved.</span>
+                    <hr className="my-6 sm:mx-auto border-slate-800 dark:border-gray-300 lg:my-8" />
+                    <span className="block text-sm text-slate-800 sm:text-center dark:text-gray-300">© 2025 Bea D. All Rights Reserved.</span>
                 </div>
             </footer>
         </div>
