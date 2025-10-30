@@ -1,5 +1,6 @@
 import React from 'react'
 import myPhoto from '../assets/myphoto-2.png';
+import dingsonCV from '../assets/dingson-cv.pdf';
 
 function About(){
     return (
@@ -20,7 +21,7 @@ function About(){
               <p className="text-lg text-left pb-4 text-slate-700 dark:text-gray-200">Beyond design, my curiosity drives me to explore data analytics, game development, and advanced web technologies. My ultimate goal is to turn ideas into something creative, functional, and beneficial for society.</p>
               <div className='flex flex-nowrap'>
                 <a 
-                href="src/assets/dingson-cv.pdf"
+                href={dingsonCV}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="no-hover rounded-lg border-gray-200 p-3 text-md bg-linear-to-r from-teal-500 to-cyan-500 w-36 cursor-pointer transition delay-100 duration-200 ease-in-out hover:-translate-y-1 hover:scale-105">
